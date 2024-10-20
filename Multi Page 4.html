@@ -1,0 +1,298 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>My First multicolumn </title>
+  
+	<style type="text/css">
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	
+		/*==========CSS Reset==========*/
+		
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+		   v2.0 | 20110126
+		   License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		
+		/*=======End CSS Reset=======*/
+		
+		
+		/*
+		Blue #6550C3
+		brown #B29D82
+		light brown #BBB39E
+		dark brown #2B1F08
+		very light cream #FFF6E4
+		*/
+		
+		body{
+				background-color: #2B1F08;
+		}
+		
+		#wrapper{
+			width: 80.56640625%; /* 825/1024 */
+			margin: 0 auto;
+			background-color: #FFF6E4;
+		}
+		
+		header{
+			background-color: #B29D82;
+			padding: 3%;
+		}
+		
+		nav{
+			margin: 0 auto;
+			background-color: #BBB39E;
+			padding: 1% 0;
+		}
+		
+		nav ul{
+			width: 85.57575757575758%; /* 706/825 */
+			margin: 0 auto;
+		}
+		
+		nav ul li{
+			display: inline;
+			margin-right: 2%;
+		}
+		
+		/*======Type Styles======*/
+		
+		
+		
+		#feature{
+			width: 81.32575757575758; /* 706/825 */
+			margin: 3% 4% 4% 4% ;
+			padding: 1.5% 2.25% 3.5% 2.25%;
+			background-color: #B29D82;
+			overflow: hidden;
+		}
+		
+		.feature-img{
+			float: left;
+			width: 40%;
+		}
+		
+		figure{
+			background-color: #FFF6E4;
+		}
+		
+		figure img{
+			max-width: 100%;
+		}
+		
+		#main-content{
+			width: 59.39393939393939%; /* 523/825 */
+			float: left;
+			margin: 2%;
+		}
+		
+		.main-figure{
+			width: 32.50478011472275%; /* 170/523 */
+			margin-right: 9.56022944550669%; /* 50/523 */
+			float: right;
+		}
+		
+		#sidebar{
+			width: 32.60606060606061%; /* 302/825*/
+			float: left;
+			margin: 2%;
+		}
+		
+		#side-figure{
+			width: 88.0794701986755%; /* 266/302 */
+			margin: 0 auto;
+			padding: bottom: 3%;
+		}
+		
+		footer{
+			clear: left;
+			padding: 2%;
+		}
+		
+		footer>p{
+			margin: 0;
+		}
+		
+		p{
+			margin: 2.5% 0;
+		}
+		
+		/* type styles */
+		
+		/*
+		font-family: "Josefin Slab", serif;
+		font-family: "Lora", serif;
+		font-family: "Bebas Neue", sans-serif;
+		*/
+		
+		body{
+			font-family: "Lora", serif;
+		}
+		
+		article>p{
+			line-height: 130%;
+		}
+		
+		h1, h2, h3, h4, h5, h6{
+			font-family: "Bebas Neue", sans-serif;
+			color: #6550C3;
+			letter-spacing: .05em;
+		}
+		
+		h1{
+			font-size: 2em;
+			font-weight: bold;
+		}
+		
+		h2{
+			font-size: 1.75em;
+			font-weight: bold;
+		}
+		
+		.feature-text{
+			float: left;
+			width: 58%;
+			margin-left: 2%;
+			font-family: "Josefin Slab", serif;
+			font-size: 1.15em;
+			font-weight: bold;
+			line-height: 82%;
+			letter-spacing: .015em;
+		}
+		
+		#feature h2{
+			margin-bottom: 2%;
+		}
+		
+		figcaption{
+			font-family: "Josefin Slab", serif;
+			margin: 3%
+		}
+		
+		#sidebar figcaption{
+			margin-bottom: 8%;
+		}
+	</style>
+ 
+ 
+ 
+ <!--[if lt IE 9]>
+    <script src="
+	https://cdnjs.cloudfare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js
+	"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<header>
+			<h1>Dune: Part Two</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href = "Multi Page 1.html">Page 1</a></li>
+				<li><a href = "Multi Page 2.html">Page 2</a></li>
+				<li><a href = "Multi Page 3.html">Page 3</a></li>
+				<li><a href = "Multi Page 5.html">Page 5</a></li>
+			</ul>
+		</nav>
+		
+		<div id="feature">
+			<h2>Favorite Scene</h2>
+			
+			<img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2024/03/paul-atreides-looking-at-the-fremen-as-he-gives-his-speech-in-dune-2.jpg" class = "feature-img"/>
+			
+			<p class = "feature-text"> In "Dune: Part Two," the pivotal speech scene featuring Paul Atreides is a powerful moment that encapsulates his evolution into a leader and visionary. Standing before a gathering of Fremen, Paul passionately articulates his vision for their future and the potential of their uprising against the oppressive forces of House Harkonnen. His words resonate deeply, weaving together themes of destiny, sacrifice, and the importance of unity in the face of adversity. The intensity of the scene is heightened by the emotional weight of Paul’s journey and the fervor of the Fremen, who see him not just as a leader, but as the prophesied figure destined to lead them to freedom. This moment serves as a turning point, showcasing Paul’s ability to inspire and galvanize, setting the stage for the monumental events that follow in their struggle for liberation. Click on the blue text to watch this <a href="https://www.youtube.com/watch?v=P44tVoLETfA">scene!</a></p>
+		</div>
+		
+		<div id="main-content">
+			<article>
+				<h2>Why You Should Watch</h2>
+				
+				<figure class = "main-figure">
+					<img src="https://i.ebayimg.com/images/g/MZMAAOSwetxlzM0o/s-l1200.jpg"/>
+					<figcaption>
+						<p>One Of My Favorite Posters Ever</p>
+					</figcaption>
+				</figure>
+				
+				<p>In "Dune: Part Two," Paul Atreides continues his journey as he embraces his role as the prophesied Kwisatz Haderach and seeks to unite the Fremen against the oppressive rule of House Harkonnen. After the devastating loss of his family, Paul teams up with Chani and the Fremen to harness the power of the desert and the spice, pivotal to their survival and the galaxy's economy. As he navigates the intricacies of political alliances, warfare, and his burgeoning abilities, Paul faces the moral dilemmas of leadership and the weight of destiny. The film culminates in an epic clash for control of Arrakis, where Paul's visions and decisions shape not only his future but the fate of the universe, exploring themes of power, sacrifice, and the consequences of prophecy.</p>
+				
+				<p>"Dune: Part Two" is a cinematic masterpiece that offers a rich and immersive experience, drawing viewers into the intricate world of Frank Herbert's beloved novel. The film masterfully builds on the foundation laid in the first installment, delivering stunning visuals and a grandiose scale that transport audiences to the harsh yet mesmerizing landscape of Arrakis. The cinematography is breathtaking, showcasing the vast deserts, intricate architecture, and the epic battles that define the story. Coupled with Hans Zimmer's haunting score, the film creates an atmosphere that is both tense and exhilarating, making it a visual feast that demands to be seen on the big screen.</p>
+				
+				<p>Beyond its stunning aesthetics, "Dune: Part Two" delves into profound themes of power, destiny, and the human spirit. The character development of Paul Atreides, portrayed with depth and nuance, resonates as he grapples with his identity and the burden of prophecy. The film explores the complexities of leadership, loyalty, and the fight for freedom, making it relevant and thought-provoking. With a stellar cast that brings rich characters to life, the narrative captivates viewers with its political intrigue and emotional stakes. Ultimately, "Dune: Part Two" is not just a sci-fi epic; it is a compelling story that encourages reflection on humanity's struggles and triumphs, making it a must-watch for fans of cinema and literature alike.</p>
+				
+			</article>
+			
+		</div>
+		<div id="sidebar">
+			<article>
+				<h2>Highlight of the Film</h2>
+				<figure class = "side-figure">
+					<img src="https://m.media-amazon.com/images/M/MV5BZDFlOTNjMTItNzFkZi00M2UxLTlkNDgtZDIxYzYyY2EyNGExXkEyXkFqcGc@._V1_.jpg"/>
+					<figcaption>
+						<p>Art</p>
+					</figcaption>
+				</figure>
+				
+				<p>Beyond its stunning aesthetics, "Dune: Part Two" delves into profound themes of power, destiny, and the human spirit. The character development of Paul Atreides, portrayed with depth and nuance, resonates as he grapples with his identity and the burden of prophecy. The film explores the complexities of leadership, loyalty, and the fight for freedom, making it relevant and thought-provoking. With a stellar cast that brings rich characters to life, the narrative captivates viewers with its political intrigue and emotional stakes. Ultimately, "Dune: Part Two" is not just a sci-fi epic; it is a compelling story that encourages reflection on humanity's struggles and triumphs, making it a must-watch for fans of cinema and literature alike.</p>
+				
+			</article>
+		</div>
+		<footer>
+			<p><small>Pascual Aguirre 2024</small></p>
+		</footer>
+	</div>
+</body>
+</html>

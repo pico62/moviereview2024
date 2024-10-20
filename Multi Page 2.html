@@ -1,0 +1,320 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>My First multicolumn </title>
+  
+	<style type="text/css">
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	
+		/*==========CSS Reset==========*/
+		
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+		   v2.0 | 20110126
+		   License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		
+		/*=======End CSS Reset=======*/
+		
+		
+		/*
+		Dark Blue #0156A3
+		black
+		light blue #55A0E4
+		muted blue #577691
+		light grey #D3D3D3
+		*/
+		
+		body{
+				background-color: black;
+		}
+		
+		#wrapper{
+			width: 80.56640625%; /* 825/1024 */
+			margin: 0 auto;
+			background-color: #577691;
+		}
+		
+		header{
+			background-color: #55A0E4;
+			padding: 3%;
+		}
+		
+		nav{
+			margin: 0 auto;
+			background-color: black;
+			padding: 1% 0;
+		}
+		
+		nav ul{
+			width: 85.57575757575758%; /* 706/825 */
+			margin: 0 auto;
+		}
+		
+		nav ul li{
+			display: inline;
+			margin-right: 2%;
+		}
+		
+		/*======Type Styles======*/
+		
+		
+		
+		#feature{
+			width: 81.32575757575758; /* 706/825 */
+			margin: 3% 4% 4% 4% ;
+			padding: 1.5% 2.25% 3.5% 2.25%;
+			background-color: #D3D3D3;
+			overflow: hidden;
+		}
+		
+		.feature-img{
+			float: left;
+			width: 40%;
+		}
+		
+		figure{
+			background-color: #577691;
+		}
+		
+		figure img{
+			max-width: 100%;
+		}
+		
+		#main-content{
+			width: 59.39393939393939%; /* 523/825 */
+			float: left;
+			margin: 2%;
+		}
+		
+		.main-figure{
+			width: 32.50478011472275%; /* 170/523 */
+			margin-right: 9.56022944550669%; /* 50/523 */
+			float: right;
+		}
+		
+		#sidebar{
+			width: 32.60606060606061%; /* 302/825*/
+			float: left;
+			margin: 2%;
+		}
+		
+		#side-figure{
+			width: 88.0794701986755%; /* 266/302 */
+			margin: 0 auto;
+			padding: bottom: 3%;
+		}
+		
+		footer{
+			clear: left;
+			padding: 2%;
+		}
+		
+		footer>p{
+			margin: 0;
+		}
+		
+		p{
+			margin: 2.5% 0;
+		}
+		
+		/* type styles */
+		
+		/*
+		font-family: "Josefin Slab", serif;
+		font-family: "Lora", serif;
+		font-family: "Bebas Neue", sans-serif;
+		*/
+		
+		body{
+			font-family: "Lora", serif;
+		}
+		
+		article>p{
+			line-height: 130%;
+		}
+		
+		h1, h2, h3, h4, h5, h6{
+			font-family: "Bebas Neue", sans-serif;
+			color: #0156A3;
+			letter-spacing: .05em;
+		}
+		
+		h1{
+			font-size: 2em;
+			font-weight: bold;
+		}
+		
+		h2{
+			font-size: 1.75em;
+			font-weight: bold;
+		}
+		
+		.feature-text{
+			float: left;
+			width: 58%;
+			margin-left: 2%;
+			font-family: "Josefin Slab", serif;
+			font-size: 1.15em;
+			font-weight: bold;
+			line-height: 120%;
+			letter-spacing: .015em;
+		}
+		
+		#feature h2{
+			margin-bottom: 2%;
+		}
+		
+		figcaption{
+			font-family: "Josefin Slab", serif;
+			margin: 3%
+		}
+		
+		#sidebar figcaption{
+			margin-bottom: 8%;
+		}
+		
+		blockquote{
+		font-size: 1.5em;
+		font-family: serif;
+		line-height: 1.5em;
+		margin: 4% 0 4% 6%;
+		background-color: black;
+		padding: 2%;
+		color: #577691;
+		}
+		
+		blockquote:before{
+		font-size: 4em;
+		vertical-align: -.35em;
+		line-height: 0em;
+		content: "\201c";
+		}
+		
+	</style>
+ 
+ 
+ 
+ <!--[if lt IE 9]>
+    <script src="
+	https://cdnjs.cloudfare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js
+	"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<header>
+			<h1>The Dark Knight</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href = "Multi Page 1.html">Page 1</a></li>
+				<li><a href = "Multi Page 3.html">Page 3</a></li>
+				<li><a href = "Multi Page 4.html">Page 4</a></li>
+				<li><a href = "Multi Page 5.html">Page 5</a></li>
+			</ul>
+		</nav>
+		
+		<div id="feature">
+			<h2>Favorite Scene</h2>
+			
+			<img src="https://breakinggeek.com/wp-content/uploads/2015/01/thedarkknightd3176206dsuf4.jpg" class = "feature-img"/>
+			
+			<p class = "feature-text">In this scene Batman finally catches Joker, and the police can't get any information out of him. The Joker wants to talk to Batman, so the Batman tries his best to interrogate him and find the location of Harvey Dent. The scene dives into the way the Joker feels society sees both himself and batman. This scene is beautiful because you think Batman finally has the Joker right where he wants him but as the scene unfolds you see just how sick and demented the Joker really is. Batman had played right into his hand, and was forced to make an incredibly hard decision that would affect the lives of either Harvey Dent or Rachel Dawes. This is the best performance you can ever ask for from both Heath Ledger and Christian Bale. Click on the blue text to watch this <a href="https://www.youtube.com/watch?v=jane6C4rIwc">scene!</a></p>
+		</div>
+		
+		<div id="main-content">
+			<article>
+				<h2>Why You Should Watch</h2>
+				
+				<figure class = "main-figure">
+					<img src="https://i0.wp.com/screenmayhem.com/wp-content/uploads/2018/07/The-Dark-Knight.png?resize=701%2C467&ssl=1"/>
+					<figcaption>
+						<p>One of my favorite shots</p>
+					</figcaption>
+				</figure>
+				
+				<p>In "The Dark Knight," Gotham City is under siege by the chaotic Joker, who seeks to dismantle the social order and prove that anyone can become as twisted as he is. Batman, along with Police Lieutenant Jim Gordon and District Attorney Harvey Dent, strives to combat the rising crime wave while maintaining their moral code. As the Joker orchestrates a series of brutal schemes, including a deadly game involving hostages and a ferry full of civilians, Batman faces the ultimate test of his principles. The film explores themes of justice, sacrifice, and the thin line between heroism and villainy, culminating in the tragic transformation of Harvey Dent into the vengeful vigilante Two-Face. Ultimately, Batman must decide how far he is willing to go to protect Gotham and its citizens, even at the cost of his own reputation.</p>
+				
+				<p>"The Dark Knight" stands out as one of the best movies of all time due to its masterful blend of storytelling, character development, and thematic depth. The film transcends the superhero genre, delving into complex moral dilemmas and the psychological struggles of its characters. Batman's commitment to justice is continually tested by the Joker's anarchic philosophy, which challenges the very foundations of societal order. The film's intricate plot, filled with unexpected twists and high-stakes tension, keeps audiences on the edge of their seats while provoking thoughtful discussions about good, evil, and the choices that define us. Below is one of my favorite quotes from the dark knight trilogy.</p>
+				
+				<blockquote>
+					The night is darkest right before dawn. And I promise you, the dawn is coming.
+				</blockquote>
+				
+				<p>Additionally, Heath Ledger's iconic performance as the Joker elevates the film to legendary status. His portrayal captures the character's unpredictability and chilling charisma, creating a villain who is both captivating and terrifying. The film's visual style, combined with Hans Zimmer and James Newton Howard's haunting score, enhances the immersive experience, making Gotham City feel like a character in its own right. With its groundbreaking approach to the superhero narrative, "The Dark Knight" not only set new standards for filmmaking within the genre but also left an indelible mark on popular culture, influencing countless films and discussions about heroism, morality, and the nature of fear.</p>
+				
+			</article>
+			
+		</div>
+		<div id="sidebar">
+			<article>
+				<h2>Highlight of the Film</h2>
+				<figure class = "side-figure">
+					<img src="https://nypost.com/wp-content/uploads/sites/2/2024/10/film-still-dark-knight-heath-42741884.jpg?quality=75&strip=all&w=1024"/>
+					<figcaption>
+						<p>Rest In Peace Heath Ledger</p>
+					</figcaption>
+				</figure>
+				
+				<p>Heath Ledger's performance as the Joker in "The Dark Knight" is widely regarded as one of the most remarkable portrayals in cinematic history. Ledger embodies the character with a terrifying blend of charisma, unpredictability, and dark humor, bringing to life a villain who feels both surreal and disturbingly real. His interpretation goes beyond mere villainy; he explores the Joker’s anarchic philosophy, presenting a chaotic worldview that challenges the moral compass of Batman and Gotham City. Ledger’s physicality, from his erratic movements to his hauntingly maniacal laughter, combined with his unsettling makeup and iconic voice, creates a lasting impression that captivates audiences. This performance not only earned him a posthumous Academy Award but also solidified the Joker as a cultural icon, illustrating the profound impact of his dedication and artistry on the film and the genre as a whole.</p>
+				
+			</article>
+		</div>
+		<footer>
+			<p><small>Pascual Aguirre 2024</small></p>
+		</footer>
+	</div>
+</body>
+</html>

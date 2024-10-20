@@ -1,0 +1,328 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>My First multicolumn </title>
+  
+	<style type="text/css">
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	
+		/*==========CSS Reset==========*/
+		
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+		   v2.0 | 20110126
+		   License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		
+		/*=======End CSS Reset=======*/
+		
+		
+		/*
+		light green  #7a9a7e
+		dark blue #2e3a7f
+		beige #e3d4b6
+		grey #D3D3D3
+		blood red #b03a2e
+		*/
+		
+		body{
+			background-color: #2e3a7f;
+		}
+		
+		#wrapper{
+			width: 80.56640625%; /* 825/1024 */
+			margin: 0 auto;
+			background-color: #7a9a7e;
+		}
+		
+		header{
+			background-color: #e3d4b6;
+			padding: 3%;
+		}
+		
+		nav{
+			margin: 0 auto;
+			background-color: #D3D3D3;;
+			padding: 1% 0;
+		}
+		
+		nav ul{
+			width: 85.57575757575758%; /* 706/825 */
+			margin: 0 auto;
+		}
+		
+		nav ul li{
+			display: inline;
+			margin-right: 2%;
+		}
+		
+		/*======Type Styles======*/
+		
+		
+		
+		#feature{
+			width: 81.32575757575758; /* 706/825 */
+			margin: 3% 4% 4% 4% ;
+			padding: 1.5% 2.25% 3.5% 2.25%;
+			background-color: #e3d4b6;
+			overflow: hidden;
+		}
+		
+		.feature-img{
+			float: left;
+			width: 40%;
+		}
+		
+		figure{
+			background-color: #7a9a7e;
+		}
+		
+		figure img{
+			max-width: 100%;
+		}
+		
+		#main-content{
+			width: 59.39393939393939%; /* 523/825 */
+			float: left;
+			margin: 2%;
+		}
+		
+		.main-figure{
+			width: 32.50478011472275%; /* 170/523 */
+			margin-right: 9.56022944550669%; /* 50/523 */
+			float: right;
+		}
+		
+		#sidebar{
+			width: 32.60606060606061%; /* 302/825*/
+			float: left;
+			margin: 2%;
+		}
+		
+		#side-figure{
+			width: 88.0794701986755%; /* 266/302 */
+			margin: 0 auto;
+			padding: bottom: 3%;
+		}
+		
+		footer{
+			clear: left;
+			padding: 2%;
+		}
+		
+		footer>p{
+			margin: 0;
+		}
+		
+		p{
+			margin: 2.5% 0;
+		}
+		
+		/* type styles */
+		
+		/*
+		font-family: "Josefin Slab", serif;
+		font-family: "Lora", serif;
+		font-family: "Bebas Neue", sans-serif;
+		*/
+		
+		body{
+			font-family: "Lora", serif;
+		}
+		
+		article>p{
+			line-height: 130%;
+		}
+		
+		h1, h2, h3, h4, h5, h6{
+			font-family: "Bebas Neue", sans-serif;
+			color: #b03a2e;
+			letter-spacing: .05em;
+		}
+		
+		h1{
+			font-size: 2em;
+			font-weight: bold;
+		}
+		
+		h2{
+			font-size: 1.75em;
+			font-weight: bold;
+		}
+		
+		.feature-text{
+			float: left;
+			width: 58%;
+			margin-left: 2%;
+			font-family: "Josefin Slab", serif;
+			font-size: 1.15em;
+			font-weight: bold;
+			line-height: 90%;
+			letter-spacing: .015em;
+		}
+		
+		#feature h2{
+			margin-bottom: 2%;
+		}
+		
+		figcaption{
+			font-family: "Josefin Slab", serif;
+			margin: 3%
+		}
+		
+		#sidebar figcaption{
+			margin-bottom: 8%;
+		}
+		
+		table, th, td, tfoot, tbody{
+		border: 2px solid black;
+		background-color:#BBB39E;
+		}
+		
+	</style>
+ 
+ 
+ 
+ <!--[if lt IE 9]>
+    <script src="
+	https://cdnjs.cloudfare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js
+	"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<header>
+			<h1>Parasite</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href = "Multi Page 1.html">Page 1</a></li>
+				<li><a href = "Multi Page 2.html">Page 2</a></li>
+				<li><a href = "Multi Page 3.html">Page 3</a></li>
+				<li><a href = "Multi Page 4.html">Page 4</a></li>
+			</ul>
+		</nav>
+		
+		<div id="feature">
+			<h2>Favorite Scene</h2>
+			
+			<img src="https://statcdn.fandango.com/MPX/image/NBCU_Fandango/568/954/thumb_12FE21B7-86A2-4398-8900-5A763F3EF977.jpg" class = "feature-img"/>
+			
+			<p class = "feature-text"> In "Parasite," the under-the-table scene is a masterful moment that intensifies the film's themes of class struggle and deception. As the wealthy Park family enjoys a meal above, the impoverished Kim family hides beneath the table, starkly contrasting their lives and highlighting the societal divide. This surreal and tense situation becomes a microcosm of the film's broader commentary on inequality, as the Kims listen to the Parks' conversations, revealing their obliviousness to the struggles of those beneath them. The claustrophobic positioning under the table not only symbolizes the Kims' hidden existence but also builds an atmosphere of suspense and dark humor, culminating in a moment of revelation and tension that underscores the film’s exploration of privilege and desperation. This scene is both poignant and unsettling, encapsulating the film's brilliance in blending drama with social critique. Click on the blue text to watch this <a href="https://www.youtube.com/watch?v=Y1OgTE3ijSQ">scene!</a></p>
+		</div>
+		
+		<div id="main-content">
+			<article>
+				<h2>Why You Should Watch</h2>
+				
+				<figure class = "main-figure">
+					<img src="https://m.media-amazon.com/images/I/91KArYP03YL._AC_UF894,1000_QL80_.jpg"/>
+					<figcaption>
+						<p>Perfect Poster</p>
+					</figcaption>
+				</figure>
+				
+				<p>"Parasite" follows the impoverished Kim family as they scheme to infiltrate the wealthy Park household by securing employment through deceitful means. The son, Ki-woo, lands a tutoring job for the Parks' daughter, and he quickly orchestrates a plan to get his family members hired by fabricating credentials and backstories. As they gradually take over various roles within the household, they become entangled in a web of deception, enjoying the luxuries of their new lives. However, their scheme unravels when a hidden secret is discovered beneath the Parks' home, leading to a dramatic confrontation that exposes the stark disparities between the two families. The film masterfully explores themes of class conflict, privilege, and the lengths people will go to escape their circumstances, culminating in a shocking and thought-provoking conclusion that lingers long after the credits roll.</p>
+				
+				<p>"Parasite" is a cinematic tour de force that masterfully blends genres, seamlessly transitioning from dark comedy to thrilling drama, all while delivering a poignant social commentary. Directed by Bong Joon-ho, the film offers a gripping narrative that explores the stark contrasts between the lives of the wealthy and the poor, inviting viewers to reflect on issues of class and privilege. The storytelling is sharp and intricately woven, with unexpected twists that keep audiences engaged and guessing. The film's exceptional writing, combined with sharp dialogue and intricate character development, allows viewers to form deep connections with both the Kim and Park families, making the unfolding drama all the more impactful.</p>
+				
+				<p>Visually stunning and technically brilliant, "Parasite" showcases exceptional cinematography and production design that enhance the storytelling. The contrasting settings of the Kim family's cramped basement apartment and the Park family's luxurious home are not only visually striking but serve as powerful symbols of their respective social standings. The film's rich thematic depth is complemented by an outstanding cast that delivers nuanced performances, bringing complexity and humanity to their roles. With its sharp wit, emotional resonance, and thought-provoking exploration of societal issues, "Parasite" is a film that not only entertains but also challenges viewers to confront uncomfortable truths about class and inequality, making it a must-watch for anyone seeking a thought-provoking cinematic experience.</p>
+			
+			</article>
+		</div>
+		<div id="sidebar">
+			<article>
+				<h2>Highlight of the Film</h2>
+				<figure class = "side-figure">
+					<img src="https://i.ytimg.com/vi/LQsGEzTkkQw/maxresdefault.jpg"/>
+					<figcaption>
+						<p>Absolute Genius</p>
+					</figcaption>
+				</figure>
+				
+				<p>The soundtrack of "Parasite," composed by Jung Jae-il, plays a crucial role in enhancing the film's emotional depth and narrative tension. Its haunting melodies and atmospheric tones effectively complement the film's shifting moods, seamlessly transitioning between moments of dark humor, suspense, and poignant drama. The use of a minimalist piano theme becomes a recurring motif, evoking a sense of unease and foreboding that mirrors the characters' increasingly precarious situation. Additionally, the score cleverly incorporates elements of classical and contemporary music, enriching the storytelling and elevating key scenes to unforgettable heights. The soundtrack's ability to evoke strong emotions and reinforce the film's themes of class struggle and deception makes it an integral part of the viewing experience, further cementing "Parasite" as a cinematic masterpiece. Below I'll leave some ratings for the film from different movie review sites.</p>
+				
+			</article>
+			
+			<table>
+			<thead>
+				<tr>
+					<th colspan="4">Ratings</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>Rotten Tomatoes</td>
+					<td>IMDB</td>
+					<td>LetterBoxd</td>
+					<td>MetaCritic</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>99%</td>
+					<td>8.5/10</td>
+					<td>4.6/5</td>
+					<td>97</td>
+				</tr>
+			</tbody>
+			</table>
+				
+		</div>
+		<footer>
+			<p><small>Pascual Aguirre 2024</small></p>
+		</footer>
+	</div>
+</body>
+</html>

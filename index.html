@@ -1,0 +1,309 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>My First multicolumn </title>
+  
+	<style type="text/css">
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	
+		/*==========CSS Reset==========*/
+		
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+		   v2.0 | 20110126
+		   License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		
+		/*=======End CSS Reset=======*/
+		
+		
+		/*
+		gold #FFD700
+		brown #B29D82
+		light brown #BBB39E
+		black
+		very light cream #FFF6E4
+		*/
+		
+		body{
+				background-color: black;
+		}
+		
+		#wrapper{
+			width: 80.56640625%; /* 825/1024 */
+			margin: 0 auto;
+			background-color: #FFF6E4;
+		}
+		
+		header{
+			background-color: #B29D82;
+			padding: 3%;
+		}
+		
+		nav{
+			margin: 0 auto;
+			background-color: #D3D3D3;;
+			padding: 1% 0;
+		}
+		
+		nav ul{
+			width: 85.57575757575758%; /* 706/825 */
+			margin: 0 auto;
+		}
+		
+		nav ul li{
+			display: inline;
+			margin-right: 2%;
+		}
+		
+		/*======Type Styles======*/
+		
+		
+		
+		#feature{
+			width: 81.32575757575758; /* 706/825 */
+			margin: 3% 4% 4% 4% ;
+			padding: 1.5% 2.25% 3.5% 2.25%;
+			background-color: #B29D82;
+			overflow: hidden;
+		}
+		
+		.feature-img{
+			float: left;
+			width: 40%;
+		}
+		
+		figure{
+			background-color: #FFF6E4;
+		}
+		
+		figure img{
+			max-width: 100%;
+		}
+		
+		#main-content{
+			width: 59.39393939393939%; /* 523/825 */
+			float: left;
+			margin: 2%;
+		}
+		
+		.main-figure{
+			width: 32.50478011472275%; /* 170/523 */
+			margin-right: 9.56022944550669%; /* 50/523 */
+			float: right;
+		}
+		
+		#sidebar{
+			width: 32.60606060606061%; /* 302/825*/
+			float: left;
+			margin: 2%;
+		}
+		
+		#side-figure{
+			width: 88.0794701986755%; /* 266/302 */
+			margin: 0 auto;
+			padding: bottom: 3%;
+		}
+		
+		footer{
+			clear: left;
+			padding: 2%;
+		}
+		
+		footer>p{
+			margin: 0;
+		}
+		
+		p{
+			margin: 2.5% 0;
+		}
+		
+		/* type styles */
+		
+		/*
+		font-family: "Josefin Slab", serif;
+		font-family: "Lora", serif;
+		font-family: "Bebas Neue", sans-serif;
+		*/
+		
+		body{
+			font-family: "Lora", serif;
+		}
+		
+		article>p{
+			line-height: 130%;
+		}
+		
+		h1, h2, h3, h4, h5, h6{
+			font-family: "Bebas Neue", sans-serif;
+			color: #FFD700;
+			letter-spacing: .05em;
+		}
+		
+		h1{
+			font-size: 2em;
+			font-weight: bold;
+		}
+		
+		h2{
+			font-size: 1.75em;
+			font-weight: bold;
+		}
+		
+		.feature-text{
+			float: left;
+			width: 58%;
+			margin-left: 2%;
+			font-family: "Josefin Slab", serif;
+			font-size: 1.15em;
+			font-weight: bold;
+			line-height: 120%;
+			letter-spacing: .015em;
+		}
+		
+		#feature h2{
+			margin-bottom: 2%;
+		}
+		
+		figcaption{
+			font-family: "Josefin Slab", serif;
+			margin: 3%
+		}
+		
+		#sidebar figcaption{
+			margin-bottom: 8%;
+		}
+		
+		ul{
+			list-style-type: square;
+		}
+	</style>
+ 
+ 
+ <!--[if lt IE 9]>
+    <script src="
+	https://cdnjs.cloudfare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js
+	"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<header>
+			<h1>My Favorite Movies Ever</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href = "Multi Page 2.html">Page 2</a></li>
+				<li><a href = "Multi Page 3.html">Page 3</a></li>
+				<li><a href = "Multi Page 4.html">Page 4</a></li>
+				<li><a href = "Multi Page 5.html">Page 5</a></li>
+			</ul>
+		</nav>
+		
+		<div id="feature">
+			<h2>What To Expect</h2>
+			
+			<img src="https://cdn2.vectorstock.com/i/1000x1000/41/06/set-0-100-percentage-diagram-ready-to-use-vector-29454106.jpg" class = "feature-img"/>
+			
+			<p class = "feature-text"> In this website I will be going over 4 of my favorite movies of all time. Each page will have a brief description of the movie, a link to my favorite scene, and what I enjoyed most about the movie. Some pages will be different from the others, some may have tables with critics and audience ratings compared to mine, other pages will have my favorite quote from the movie. Thanks for visiting my website and I hope you enjoy! </p>
+		</div>
+		
+		<div id="main-content">
+			<article>
+				<h2>My Favorite Genres of Movies</h2>
+				
+				<figure class = "main-figure">
+					<img src="https://media.istockphoto.com/id/1028639730/vector/film-genres-icons-black-flat-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=UZHQqrzkP7gJKJFd3Nk3pn3sW5npJcn9p-5tadodCLY="/>
+					<figcaption>
+						<p>Genres of Movies</p>
+					</figcaption>
+				</figure>
+				
+				<p>I enjoy superhero movies because they offer an exhilarating escape into fantastical worlds where good triumphs over evil, igniting a sense of hope and possibility. The larger-than-life characters, each with unique abilities and relatable struggles, remind me that everyone can be a hero in their own way. These films often explore themes of courage, friendship, and sacrifice, resonating deeply with my values and emotions. Plus, the thrilling action sequences and stunning visuals keep me on the edge of my seat, making every viewing an unforgettable experience. Ultimately, superhero movies inspire me to believe in the power of resilience and the importance of standing up for what is right.</p>
+				
+				<p>I enjoy animated movies because they have a unique ability to blend creativity and storytelling in a way that captivates both my imagination and emotions. The vibrant visuals and dynamic characters bring to life fantastical worlds where anything is possible, allowing me to escape reality and embrace a sense of wonder. Additionally, animated films often tackle profound themes—like friendship, identity, and perseverance—in a way that resonates with audiences of all ages. The humor, heartwarming moments, and memorable soundtracks add to the experience, making each film a delightful journey that leaves me feeling uplifted and inspired. Ultimately, animated movies remind me of the beauty of creativity and the magic of storytelling..</p>
+				
+				<p>I enjoy action thriller movies because they deliver an adrenaline-pumping blend of suspense and excitement that keeps me on the edge of my seat. The fast-paced plots and unexpected twists draw me in, creating a thrilling atmosphere that engages both my mind and emotions. I love the complex characters, often facing moral dilemmas and high-stakes challenges, which add depth to the action. The intensity of the chase scenes, explosive set pieces, and gripping confrontations provide a sense of exhilaration that’s hard to match. Ultimately, action thrillers offer a perfect escape, immersing me in a world of danger and intrigue where anything can happen, and where the tension always leaves me craving more.</p>
+				
+				<p>I enjoy romantic comedy movies because they blend humor and heart in a way that leaves me smiling. The charming characters and their relatable, often awkward situations resonate with my own experiences in love and friendship. I love how these films tackle the ups and downs of relationships with a lighthearted touch, reminding me that love can be both hilarious and complicated. With witty dialogue and happy endings, they offer a comforting escape into a world where love conquers all, celebrating the joy of connection and the importance of laughter.</p>
+				
+			</article>
+		
+		</div>
+		<div id="sidebar">
+			<article>
+				<h2>My Current Favorite actors</h2>
+				<figure class = "side-figure">
+					<img src="https://variety.com/wp-content/uploads/2022/07/2008-Oscar-Statue.jpg?w=1000&h=562&crop=1"/>
+					<figcaption>
+						<p>The Oscar award</p>
+					</figcaption>
+				</figure>
+			
+					<ul>
+						<li>Cillian Murphy</li>
+						<li>Emma Stone</li>
+						<li>Willem Dafoe</li>
+					</ul>
+				
+				<p>There are so many fantastic actors in the industry today, so it's hard to pick favorites. The first name that came to my mind was Cillian Murphy. He is just an amazing actor, I've been a big fan since his performance of scarecrow in the first batman movie from the dark night trilogy. I heard he auditioned for the role of batman but lost out to Christian Bale and was casted as the villain instead. Since then I thought his performances in peaky blinders and oppenheimer were perfection. Another fantastic actor is Emma Stone, her catalog of movies is legendary. She is in one of the highest rated musicals of all time La La Land and has roles in just about every genre of movie. She recently was just the main character of a movie called poor things that released earlier this year and was great, if you haven't seen it I highly recommend. Last but certainly not least my third favorite actor is Willem Dafoe. Willem Dafoe plays the role of my favorite villain ever in the Rami spiderman trilogy I grew up with. He plays green goblin and I don't think you could find a better fit for the role. He also plays the green goblin in the newest spiderman movie 17 years later and go figure he is absolutely fantastic. Willem Dafoe also has a crazy range, from comediy, horror, action, and thrillers. </p>
+				
+			</article>
+		</div>
+		<footer>
+			<p><small>Pascual Aguirre 2024</small></p>
+		</footer>
+	</div>
+</body>
+</html>
